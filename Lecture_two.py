@@ -107,3 +107,4 @@ num = 5
 
 #> else :
 #   statementN
+print(num)
