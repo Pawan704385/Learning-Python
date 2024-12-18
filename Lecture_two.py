@@ -105,6 +105,161 @@ elif(light == "yellow"):
   # "if" condition always check statement whereas "elif" condition only checks when "if" condition fails.
 num = 5
 
+if(num > 2):
+    print("Greater than 2")
+if(num > 3):
+    print("Greater than 3")
+
+num = 8
+
+if(num > 4):
+    print("Greater than 2")
+elif(num > 7):
+    print("Greater than 3")
 #> else :
 #   statementN
-print(num)
+light = "pink"
+
+if(light == "red"):
+    print("stop")
+elif(light == "green"):
+    print("go")
+elif(light == "yellow"):
+    print("Slowdown > Look > Then Cross Road")
+else:
+    print("light is broken")
+
+age = 24
+
+if(age >= 18):
+    print("Can Vote")
+else:
+    print("Cannot Vote")
+
+age = 16
+
+if(age >= 18):
+    print("Can Vote")
+else:
+    print("Cannot Vote")
+# INDENTATION :- Space we are using after codition statement or anywhere in python.
+
+## PRACTICE ##
+marks = 74
+
+if(marks >= 90):
+    grade = "A"
+elif(marks >= 80 and marks < 90):
+    grade = "B"
+elif(marks >= 70 and marks < 80):
+    grade = "C"
+elif(marks >= 0 and marks < 33):
+    grade = "F"
+else:
+    grade = "D"
+
+print("grade of the student ->", grade)
+
+marks = 29
+
+if(marks >= 90):
+    grade = "A"
+elif(marks >= 80 and marks < 90):
+    grade = "B"
+elif(marks >= 70 and marks < 80):
+    grade = "C"
+elif(marks >= 0 and marks < 33):
+    grade = "F"
+else:
+    grade = "D"
+
+print("grade of the student ->", grade)
+
+marks = int(input("Enter student marks ->  "))
+
+if(marks >= 90):
+    grade = "A"
+elif(marks >= 80 and marks < 90):
+    grade = "B"
+elif(marks >= 70 and marks < 80):
+    grade = "C"
+elif(marks >= 0 and marks < 33):
+    grade = "F"
+else:
+    grade = "D"
+
+print("grade of the student ->", grade)
+
+            ## ----- X ----- ##
+
+
+## NESTING :-  It means using codition statements into another condition statements
+age = int(input("Please Enter Your Age ->  "))
+
+if(age >= 18):
+    if(age >= 80):              #Using condition in another condition statement
+        print("Cannot Drive")
+    else:
+        print("Can Drive")
+else:
+    print("Cannot Drive")
+
+
+##  Let's Practice -----
+
+# Q) WAP to check if a number entered by the user is odd or even.
+num  = int(input("Enter the Number to check (Even / Odd) =  "))
+ren  = num % 2          # Here "%" means remainder
+
+if(ren == 0):
+    print("EVEN")
+else:
+    print("ODD")
+
+
+# Q) WAP to find the greatest of 3 numbers entered by the user.
+
+a  = int(input("Enter First Number =  "))
+b  = int(input("Enter Second Number =  "))
+c  = int(input("Enter Third Number =  "))
+
+if(a >= b and a >= c):
+    print("First Number is Largest ", a)
+elif(b >= c):
+    print("Second Number is Largest ", b)
+else:
+    print("Third Number is Largest ", c)
+
+
+
+# Q) WAP to check if a number is a multiple of 7 or not.
+
+x = num  = int(input("Enter Number to check Multiple of 7 =  "))
+
+if(x % 7 == 0):
+    print("Multiple of 7 ")
+else:
+    print("Not a Multiple of 7 ")
+
+
+
+## Homework 
+# Q) WAP to find the greatest of 4 numbers entered by the user.
+
+a  = int(input("Enter First Number =  "))
+b  = int(input("Enter Second Number =  "))
+c  = int(input("Enter Third Number =  "))
+d  = int(input("Enter Fourth Number = "))
+
+
+if(a >= b and a >= c and a >= d):
+    print("First Number is Largest ", a)
+elif(b >= c and b >= d):
+    print("Second Number is Largest ", b)
+elif(c >= d):
+    print("Third Number is largest ", c)
+else:
+    print("Fourth Number is Largest ", d)
+
+
+                ## ----- X ----- ##
